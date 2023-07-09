@@ -1,0 +1,83 @@
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Oxanium', cursive;
+    background-color: #000000;
+    color: #FFFFFF;   
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    align-items: center;
+}
+body::before{
+    content: "";
+    background-image: url(../images/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+}
+.cabecalho{
+    text-align: center;
+    /* DURANTE A IMERSÃO FORAM UTILIZADAS AS PROPRIEDADES DO FLEX - PESSOALMENTE NÃO ACHEI NECESSÁRIO JÁ QUE SE TRATA DO ALINHAMENTO DE UM ÚNICO ITEM, ENTÃO UTILIZEI UMA PPROPRIEDADE MAIS SIMPLES */
+}
+.selecao-de-personagens{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    /* AQUI ESTÁ O PULO DO GATO. A FUNÇÃO CALC FOI USADA PARA QUE O CONTAINER MAIN OCUPASSE 100VH - A ALTURA DO CABECALHO (ATUALMENTE 152PX, ALTURA PROVINDA DO LOGO) */
+    min-height: calc(100vh - 152px);
+}
+.lista-de-personagens{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    list-style: none;
+}
+.personagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 585px;
+    gap: 25px;
+}
+.personagens__titulo{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+}
+.personagens__titulo, .informacoes__nome{
+    border-bottom: 2px solid #47f4ff;
+    letter-spacing: 4px;
+    text-transform: uppercase; 
+}
+
+.personagem__img{
+    width: 100%;
+    height: 100%;
+}
+.personagem.selecionado{
+    box-shadow: 0px 0px 24px 5px #0271f7;
+}
+.personagem-selecionado{
+    text-align: center;
+    max-height: 530px;
+}
+.personagem-selecionado__img{
+    width: 430px;
+    height: 430px;
+}
+.informacoes__descricao{
+    line-height: 2.2rem;
+    text-align: center;
+    margin-top: 20px;
+    width: 420px;
+}

@@ -1,0 +1,27 @@
+@media screen and (max-width: 1120px){
+
+    .logo{
+        max-width:190px;
+    }
+    .selecao-de-personagens{
+        flex-direction: column-reverse;
+        max-width: 430px;
+    }
+    .personagens__titulo{
+        font-size: 1.5rem;
+    }
+    .personagens{
+        margin-top: 37px;
+    }
+    .lista-de-personagens{
+        gap: 9px;
+    }
+    .personagem-selecionado__img{
+        width: 350px;
+        height: 350px; 
+    }
+    .informacoes__descricao{
+        width: 80%;
+        margin: 20px auto;
+    }
+}
