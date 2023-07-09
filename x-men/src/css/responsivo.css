@@ -16,6 +16,9 @@
     .lista-de-personagens{
         gap: 9px;
     }
+    .personagem__img{
+        width: 80px;
+    }
     .personagem-selecionado__img{
         width: 350px;
         height: 350px; 
